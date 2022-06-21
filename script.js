@@ -41,7 +41,7 @@ mul(1, 3);
 function div(numOne, numTwo) {
   if (isNaN(numOne) || isNaN(numTwo)) {
     console.error("insert valid number");
-  } else if (numOne === 0 || numTwo === 0) {
+  } else if (numTwo === 0) {
     console.error("division by zero is not allowed");
   } else {
     console.log(numOne / numTwo);
