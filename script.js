@@ -9,7 +9,7 @@ console.log(sum(1, 3));
 
 // 2 -> Scriviamo una versione miglirata della prima che controlla l'esistenza dei due parametri e che siano numeri
 function sum2(numOne, numTwo) {
-  if (isNaN(numOne) || isNaN(numTwo)) {
+  if (isNaN(numOne) && isNaN(numTwo)) {
     console.error("insert valid number");
   } else {
     console.log(numOne + numTwo);
@@ -21,7 +21,7 @@ sum2(1, 3);
 // 3 -> Scriviamo come per il punto due, anche per moltiplicazione, divisione, e sottrazione
 // div(2,0) -> il programma di deve dire che non posso dividere per 0
 function sub(numOne, numTwo) {
-  if (isNaN(numOne) || isNaN(numTwo)) {
+  if (isNaN(numOne) && isNaN(numTwo)) {
     console.error("insert valid number");
   } else {
     console.log(numOne - numTwo);
@@ -30,7 +30,7 @@ function sub(numOne, numTwo) {
 sub(1, 3);
 
 function mul(numOne, numTwo) {
-  if (isNaN(numOne) || isNaN(numTwo)) {
+  if (isNaN(numOne) && isNaN(numTwo)) {
     console.error("insert valid number");
   } else {
     console.log(numOne * numTwo);
@@ -39,7 +39,7 @@ function mul(numOne, numTwo) {
 mul(1, 3);
 
 function div(numOne, numTwo) {
-  if (isNaN(numOne) || isNaN(numTwo)) {
+  if (isNaN(numOne) && isNaN(numTwo)) {
     console.error("insert valid number");
   } else if (numTwo === 0) {
     console.error("division by zero is not allowed");
